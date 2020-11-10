@@ -1,0 +1,126 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+  @import "bootstrap-sprockets";
+  @import "bootstrap";
+  @chaeset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+header {
+  position: relative;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-color: brown;
+  font-family: arial unicode ms;
+  color: white;
+}
+
+main {
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  min-height: 100%;
+}
+
+#main_wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.login_name {
+  color: grey;
+  line-height: 50px;
+  position: absolute;
+  right: 10px;
+}
+
+tr {
+  text-align: center;
+}
+
+td {
+  width: 80px;
+}
+
+.text-danger{
+  color: red;
+}
+
+input {
+  color: black;
+}
+
+a {
+  color: white;
+}
+
+textarea {
+  color: black;
+}
+
+footer {
+  height: 50px;
+  background-color: white;
+  margin-top: auto;
+  text-align: center;
+  padding-top: 15px;
+  color: grey;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.flex > div{
+  flex-basis: 100px;
+}
+
+/*スライドのデザイン*/
+
+#container{
+  height: 300px;
+}
+
+.image1 {
+  background-image: image-url("image1.jpg");
+}
+.image2 {
+  background-image: image-url("image2.jpg");
+}
+.image3 {
+  background-image: image-url("image3.jpg");
+}
+.image4 {
+  background-image: image-url("image4.jpg");
+}
+.image5 {
+  background-image: image-url("image5.jpg");
+}
